@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+  Theory by TEMPLATED
+  templated.co @templatedco
+  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Living Coast</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/reset.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function () {
+		//this will attach the class to every target 
+		$(document).on('click', function (event) {
+			$target = $(event.target);   
+			$(".active").removeClass("active")
+			if($target.hasClass("dropdown-button")) {
+				$target.addClass('active');
+			}
+		});
+
+	})
+	</script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+		<div class="slogan">
+			<h1>Living Coast</h1>
+			<h3>San Diego Bay of Chula Vista</h3>
+		</div>
+		<nav> 
+			<ul class="dropdown">
+				<li class="dropdown-button">Discover
+					<ul class="dropdown-content">
+						<li>
+							<a href="">Link 1</a>
+						</li>
+						<li>
+							<a href="">Link 2</a>
+						</li>
+						<li>
+							<a href="">Link 3</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown-button">Encounter
+					<ul class="dropdown-content">
+						<li>
+							<a href="">Link 1</a>
+						</li>
+						<li>
+							<a href="">Link 2</a>
+						</li>
+						<li>
+							<a href="">Link 3</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown-button">Learn
+					<ul class="dropdown-content">
+						<li>
+							<a href="">Link 1</a>
+						</li>
+						<li>
+							<a href="">Link 2</a>
+						</li>
+						<li>
+							<a href="">Link 3</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown-button">Contact
+					<ul class="dropdown-content">
+						<li>
+							<a href="">Link 1</a>
+						</li>
+						<li>
+							<a href="">Link 2</a>
+						</li>
+						<li>
+							<a href="">Link 3</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown-button">Support
+					<ul class="dropdown-content">
+						<li>
+							<a href="">Link 1</a>
+						</li>
+						<li>
+							<a href="">Link 2</a>
+						</li>
+						<li>
+							<a href="">Link 3</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			
+		</nav>
+    </header>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>
+  </body>
+</html>
