@@ -22,10 +22,11 @@ header {
   justify-content: center;
   align-items: center;
 }
-.slogan {
+.name {
   border: 2px solid red;
   text-align: center;
   flex-grow: 1;
+  flex-basis: 50%;
 }
 nav {
   border: 2px solid palevioletred;
