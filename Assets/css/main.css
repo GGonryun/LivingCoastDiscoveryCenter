@@ -16,6 +16,37 @@ body {
     position: relative;
     width: 100vw;
   }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .active .dropdown-content {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid green;
+    justify-content: space-between;
+  }
+}
+
+@media all and (min-width: 521px) {
+  .dropdown-button {
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    align-items: center;
+  }
+  .active .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+  }
 }
 header {
   display: flex;
@@ -26,7 +57,7 @@ header {
   border: 2px solid red;
   text-align: center;
   flex-grow: 1;
-  flex-basis: 50%;
+  flex-basis: 30%;
 }
 nav {
   border: 2px solid palevioletred;
@@ -35,20 +66,4 @@ nav {
 .dropdown {
   display: flex;
   justify-content: space-around;
-}
-.dropdown-button {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  align-items: center;
-}
-.active .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  border: 2px solid green;
 }
