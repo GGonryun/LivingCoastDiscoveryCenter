@@ -17,15 +17,22 @@
             $target.addClass("active");
           }
         });
+        /*document.getElementById("vid1").addEventListener(
+          "loadedmetadata",
+          function() {
+            this.currentTime = Math.floor(Math.random() * 250 + 1);
+          },
+          false
+        );*/
       });
     </script>
   </head>
   <body>
     <!-- Header -->
+
     <header>
-      <div class="name">
-        <h1>Living Coast</h1>
-        <h3>San Diego Bay of Chula Vista</h3>
+      <div class="logo">
+        <img src="images/Coast.png" alt="Living Coast Logo" />
       </div>
       <nav>
         <ul class="dropdown">
@@ -72,7 +79,11 @@
         </ul>
       </nav>
     </header>
-
+    <section class="video full">
+      <video autoplay muted loop preload="auto" id="vid1">
+        <source src="videos/plants.mp4" type="video/mp4" />
+      </video>
+    </section>
     <!-- Footer -->
     <footer id="footer">
       <h4>1000 Gunpowder Point Dr, Chula Vista, CA 91910</h4>

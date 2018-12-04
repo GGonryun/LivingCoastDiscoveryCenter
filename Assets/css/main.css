@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:400,900|Berkshire+Swash|Dosis:300,400|Lily+Script+One");
+
+:root {
+  --Arima: "Arima Madurai", cursive;
+  --Berkshire: "Berkshire Swash", cursive;
+  --Lily: "Lily Script One", cursive;
+  --Dosis: "Dosis", sans-serif;
+}
+
 body {
   z-index: 0;
 }
@@ -30,7 +39,6 @@ body {
     justify-content: space-between;
   }
 }
-
 @media all and (min-width: 521px) {
   .dropdown-button {
     position: relative;
@@ -53,17 +61,42 @@ header {
   justify-content: center;
   align-items: center;
 }
-.name {
-  border: 2px solid red;
-  text-align: center;
+.logo {
   flex-grow: 1;
   flex-basis: 30%;
 }
+img {
+  margin: 0.5rem 3rem;
+}
 nav {
-  border: 2px solid palevioletred;
   flex-grow: 3;
+  font-family: var(--Dosis);
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: cornsilk;
 }
 .dropdown {
   display: flex;
   justify-content: space-around;
+}
+.dropdown-button {
+  transition: all 0.4s ease-out 0s;
+}
+.dropdown-button:hover {
+  color: coral;
+}
+.dropdown-button.active {
+  border-bottom: 1px solid cornsilk;
+}
+#vid1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 125%;
+  min-height: 125%;
+  width: auto;
+  height: auto;
+  z-index: -99;
+  transform: translate(-50%, -50%);
+  filter: blur(0px);
 }
