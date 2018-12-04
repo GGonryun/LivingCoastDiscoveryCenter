@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:400,900|Berkshire+Swash|Dosis:300,400|Lily+Script+One");
-
+@import url("https://fonts.googleapis.com/css?family=Arima+Madurai:400,900|Berkshire+Swash|Dosis:300,400|Lily+Script+One|Raleway:100");
 :root {
   --Arima: "Arima Madurai", cursive;
   --Berkshire: "Berkshire Swash", cursive;
   --Lily: "Lily Script One", cursive;
   --Dosis: "Dosis", sans-serif;
+  --Raleway: "Raleway", sans-serif;
+  --primary: #fffafa;
+  --secondary: #b85768;
+  --accent: #bfb850;
+  --support: #6fbe80;
 }
 
 body {
@@ -35,8 +39,7 @@ body {
   .active .dropdown-content {
     display: flex;
     flex-direction: row;
-    border: 2px solid green;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 @media all and (min-width: 801px) {
@@ -53,7 +56,6 @@ body {
   .active .dropdown-content {
     display: flex;
     flex-direction: column;
-    border: 2px solid green;
   }
 }
 header {
@@ -61,22 +63,45 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+footer {
+  position: fixed;
+  padding: 1rem;
+  bottom: 0;
+  right: 0;
+}
+.fancy {
+  text-align: center;
+  font-family: var(--Raleway);
+  color: var(--primary);
+}
+.large {
+  font-size: 3rem;
+}
+.small {
+  font-size: 0.8rem;
+}
 .logo {
   display: flex;
   flex-grow: 1;
   justify-content: center;
   align-items: center;
 }
-img {
-  margin: 1rem 1rem;
-}
+
 nav {
   flex-grow: 3;
   font-family: var(--Lily);
   font-size: 1.4rem;
   font-weight: 300;
-  color: cornsilk;
+  color: var(--primary);
+}
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.whiteout {
+  filter: brightness(0) invert(1);
 }
 .dropdown {
   display: flex;
@@ -86,7 +111,32 @@ nav {
   transition: all 0.4s ease-out 0s;
 }
 .dropdown-button:hover {
-  color: coral;
+  color: var(--secondary);
+}
+.dropdown-button.active {
+  color: var(--accent);
+}
+
+.dropdown-content li {
+  text-align: center;
+  white-space: nowrap;
+  margin-top: 1 em;
+  transform: translate(0, -0.5em);
+}
+.active .dropdown-content li {
+  transform: translate(0, 0.2em);
+}
+
+li a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+li a:visited {
+  color: var(--accent);
+}
+li a:hover {
+  color: var(--secondary);
 }
 
 #vid1 {
@@ -99,5 +149,5 @@ nav {
   height: auto;
   z-index: -99;
   transform: translate(-50%, -50%);
-  filter: blur(0px);
+  filter: blur(5px);
 }

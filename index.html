@@ -17,6 +17,7 @@
             $target.addClass("active");
           }
         });
+
         document.getElementById("vid1").addEventListener(
           "loadedmetadata",
           function() {
@@ -32,7 +33,7 @@
 
     <header>
       <div class="logo">
-        <img src="images/Coast.png" alt="living coast logo" />
+        <img class="whiteout" src="images/Coast.png" alt="living coast logo" />
       </div>
       <nav>
         <ul class="dropdown">
@@ -84,10 +85,10 @@
         <source src="videos/octopus.mp4" type="video/mp4" />
       </video>
     </section>
+    <div class="fancy center large">Where wonder comes naturally.</div>
     <!-- Footer -->
-    <footer id="footer">
+    <footer class="fancy small">
       <h4>1000 Gunpowder Point Dr, Chula Vista, CA 91910</h4>
-      <h2>where wonder comes naturally</h2>
     </footer>
   </body>
 </html>
