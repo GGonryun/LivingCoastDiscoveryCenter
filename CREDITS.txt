@@ -1,3 +1,11 @@
 # Video Credits
+Video Author: Left Coast Digital
+Author webpage: http://www.lcdig.com/ 
+Licence: ATTRIBUTION LICENSE 3.0 (http://creativecommons.org/licenses/by/3.0/us/)
+Downloaded at Mazwai.com
 
-All videos courtesy of Mazwai (http://mazwai.com/) and Pexels (https://www.pexels.com/).
+# Website Credits
+The Living Coast Discovery Center: http://www.thelivingcoast.org/
+
+# Tools
+CSS Reset: http://meyerweb.com/eric/tools/css/reset/ 
