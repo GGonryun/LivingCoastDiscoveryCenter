@@ -37,7 +37,7 @@ nav {
 li a {
   color: var(--primary);
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 li a:visited {
   color: var(--accent);
@@ -121,8 +121,8 @@ li a:hover {
 .whiteout {
   filter: brightness(0) invert(1);
 }
-.slide-left {
-  animation-name: slide-left;
+.slide-up {
+  animation-name: slide-up;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
@@ -130,7 +130,7 @@ li a:hover {
 }
 .slide-right {
   animation-name: slide-right;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
   transform-origin: center;
@@ -145,7 +145,7 @@ li a:hover {
 .ring:hover {
   border-radius: 5rem;
   animation-name: ring;
-  animation-duration: 0.4s;
+  animation-duration: 0.5s;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
@@ -175,9 +175,9 @@ li a:hover {
     width: 100vw;
   }
 }
-@keyframes slide-left {
+@keyframes slide-up {
   0% {
-    transform: translate(100%, 0);
+    transform: translate(0, 200%);
   }
   100% {
     transform: translate(0, 0);
