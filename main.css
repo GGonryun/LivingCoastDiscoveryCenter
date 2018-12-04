@@ -94,12 +94,14 @@ li a:hover {
 .dropdown-content li {
   opacity: 0;
   text-align: center;
+  pointer-events: none;
   white-space: nowrap;
   margin-top: 1.2rem;
   transform: translate(0, -1rem);
   transition: all 0.4s linear 0s;
 }
 .active .dropdown-content li {
+  pointer-events: auto;
   transform: translate(0, 0);
   opacity: 1;
   transition: all 0.4s linear 0s;
