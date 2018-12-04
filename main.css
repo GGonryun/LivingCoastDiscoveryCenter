@@ -121,8 +121,15 @@ li a:hover {
 .whiteout {
   filter: brightness(0) invert(1);
 }
-.slide {
-  animation-name: slide;
+.slide-left {
+  animation-name: slide-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: center;
+}
+.slide-right {
+  animation-name: slide-right;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
@@ -168,15 +175,22 @@ li a:hover {
     width: 100vw;
   }
 }
-@keyframes slide {
+@keyframes slide-left {
   0% {
-    transform: translate(75%, 0);
+    transform: translate(100%, 0);
   }
   100% {
     transform: translate(0, 0);
   }
 }
-
+@keyframes slide-right {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 @keyframes expand {
   0% {
     transform: scale(0);
